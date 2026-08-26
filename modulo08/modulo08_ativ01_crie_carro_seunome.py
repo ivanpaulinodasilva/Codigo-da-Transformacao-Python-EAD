@@ -13,7 +13,7 @@ print(meu_carro.exibir_info())
 
 '''
 
-
+# Vai criar um bloco de comentario, sempre pelo menor valor. Minimo de uma Linha, não passar de Cinco.
 class Carro:
     def __init__(self, marca, modelo):
         self.marca = marca
