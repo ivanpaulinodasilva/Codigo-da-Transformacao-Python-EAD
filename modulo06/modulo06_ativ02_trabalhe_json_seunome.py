@@ -1,40 +1,49 @@
 import json
+import os
 
-nome_arquivo = "clientes_nomes.json"
+# 1. Mapeando a pasta meus_arquivos dentro do modulo06
+pasta_modulo06 = os.path.dirname(os.path.abspath(__file__))
+pasta_meus_arquivos = os.path.join(pasta_modulo06, "meus_arquivos")
 
-# Dicionário/Lista com os dados dos clientes
+if not os.path.exists(pasta_meus_arquivos):
+    os.makedirs(pasta_meus_arquivos)
+
+caminho_arquivo = os.path.join(pasta_meus_arquivos, "clientes_nomes.json")
+
+# 2. Estrutura de dados dos clientes
 clientes = [
     {
         "Nome completo": "Ivan Silva",
-        "idade": "40 anos",
+        "Idade": "40 anos",
         "CEP": "02899-000",
         "ResgMatr": "947541",
-        "E-Mail": "ivanpaulino@mail.com"
+        "E-Mail": "ivanpaulino@mail.com",
     },
     {
         "Nome completo": "Beatriz Vitoria",
-        "idade": "30 anos",
+        "Idade": "30 anos",
         "CEP": "057193-000",
         "ResgMatr": "978786",
-        "E-Mail": "beavitoria@mail.com"
+        "E-Mail": "beavitoria@mail.com",
     },
     {
         "Nome completo": "Eric Renan",
-        "idade": "17 anos",
+        "Idade": "17 anos",
         "CEP": "089880-100",
         "ResgMatr": "98799",
-        "E-Mail": "ericrenan@gmail.com"
-    }
+        "E-Mail": "ericrenan@gmail.com",
+    },
 ]
 
-# --- ESCRITA (Salvar) ---
-with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
+# 3. Escrita no arquivo JSON
+with open(caminho_arquivo, "w", encoding="utf-8") as arquivo:
     json.dump(clientes, arquivo, ensure_ascii=False, indent=2)
-print(f"✅ Dados salvos em '{nome_arquivo}' com sucesso!")
 
-# --- LEITURA (Carregar) ---
-print("\n--- Carregando dados do arquivo JSON ---")
-with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
+print("✓ Arquivo 'clientes_nomes.json' salvo em: modulo06/meus_arquivos/\n")
+
+# 4. Leitura do arquivo JSON
+print("--- Carregando dados do arquivo JSON ---")
+with open(caminho_arquivo, "r", encoding="utf-8") as arquivo:
     clientes_carregados = json.load(arquivo)
 
 for cliente in clientes_carregados:
