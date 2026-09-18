@@ -17,58 +17,67 @@
  ⏱️ Timer: 
     - Troca obrigatória de papéis a cada 15-20 minutos[cite: 1, 2].
 ==============================================================================
-
-
 '''
 
 import requests
 
 def consultar_clima():
-    # 1. Entrada de dados
+    # ------------------------------------------------------------------------
+    # BLOCO 1: ENTRADA DE DADOS E CONFIGURAÇÕES DA API (Foco do Par 1)[cite: 1, 2]
+    # ------------------------------------------------------------------------
+    # 1. Entrada do nome da cidade pelo usuário
     cidade = input("Digite o nome da cidade: ").strip()
     
-    # 2. Configurações da API
+    # 2. Chave de acesso individual da OpenWeatherMap
     chave_api = "2d6690b51aa4015324c330bb1bfa1a7f" 
     
-    # --- PASSO A: Buscar Estado e Coordenadas (Geocoding API) ---
+    # --- PASSO A: Buscar Estado e Coordenadas via Geocoding API ---
     url_geo = f"http://api.openweathermap.org/geo/1.0/direct?q={cidade}&limit=1&appid={chave_api}"
     resposta_geo = requests.get(url_geo)
     
     estado = ""
     pais = ""
     
+    # Validação da busca de geolocalização
     if resposta_geo.status_code == 200 and len(resposta_geo.json()) > 0:
         dados_geo = resposta_geo.json()[0]
-        # Captura o Estado e País retornados pela Geocoding API
+        # Captura as chaves 'state' e 'country' do JSON
         estado = dados_geo.get("state", "")
         pais = dados_geo.get("country", "")
 
-    # --- PASSO B: Buscar Clima Atual ---
+    # ------------------------------------------------------------------------
+    # 🔄 RECOMENDAÇÃO DE TROCA DE PAPÉIS (Driver ↔ Navigator)[cite: 1, 2]
+    # ------------------------------------------------------------------------
+
+    # ------------------------------------------------------------------------
+    # BLOCO 2: REQUISIÇÃO HTTP E EXTRAÇÃO DE DADOS (Foco do Par 2)[cite: 1, 2]
+    # ------------------------------------------------------------------------
+    # URL formatada para consulta de clima atual (unidades em Celsius e texto em Português)
     url_api = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={chave_api}&lang=pt_br&units=metric"
 
     print("\nBuscando dados com OpenWeatherMap...")
     
-    # 3. Requisição HTTP GET
+    # 3. Requisição HTTP GET[cite: 1]
     resposta = requests.get(url_api)
 
-    # 4. Tratamento do retorno e validação do Status Code
+    # 4. Tratamento do retorno e validação do Status Code[cite: 1]
     if resposta.status_code == 200:
         dados_clima = resposta.json()
 
-        # Extração de informações do dicionário aninhado
+        # Extração de informações do dicionário aninhado (JSON) em variáveis snake_case[cite: 1]
         nome_cidade = dados_clima["name"]
         temperatura = dados_clima["main"]["temp"]
         sensacao_termica = dados_clima["main"]["feels_like"]
         descricao_clima = dados_clima["weather"][0]["description"]
         umidade = dados_clima["main"]["humidity"]
 
-        # Formatação do local (Cidade - Estado, País)
+        # Formatação dinâmica da localização
         if estado:
             localizacao = f"{nome_cidade} - {estado}, {pais}"
         else:
             localizacao = f"{nome_cidade}, {pais}"
 
-        # Exibição dos dados organizados
+        # Exibição formatada dos resultados
         print("\n" + "=" * 40)
         print(f"🌍 Clima atual em: {localizacao}")
         print("=" * 40)
@@ -78,6 +87,9 @@ def consultar_clima():
         print(f"💧 Umidade: {umidade}%")
         print("=" * 40)
 
+    # ------------------------------------------------------------------------
+    # TRATAMENTO DE ERROS DE CONEXÃO E REQUISIÇÃO HTTP[cite: 1]
+    # ------------------------------------------------------------------------
     elif resposta.status_code == 401:
         print("\n❌ Erro 401: Chave de API não autorizada.")
         print("Verifique se inseriu a chave correta ou se aguardou a ativação do OpenWeatherMap.")
@@ -89,6 +101,6 @@ def consultar_clima():
     else:
         print(f"\n⚠️ Falha na requisição. Código de erro HTTP: {resposta.status_code}")
 
-# Execução do programa
+# Execução principal
 if __name__ == "__main__":
     consultar_clima()
