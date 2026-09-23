@@ -1,0 +1,234 @@
+
+# 🎲 Pensamento Computacional - Projeto 🐍☁️💻
+Nosso primeiro repositório oficial do Código da Transformação. Um espaço para aprender, praticar e documentar o desenvolvimento de sistemas reais em Python.
+
+---
+
+## 💇‍♂️ Projeto em Destaque: Sistema de Gerenciamento - Salão de Beleza
+
+Este projeto foi desenvolvido para facilitar a gestão de um salão ou barbearia, utilizando estruturas de dados para organizar o fluxo de trabalho.
+
+### 🚀 Funcionalidades Principais
+1. **Fila de Espera (FIFO):** Registro de clientes por ordem de chegada.
+2. **Agenda de Atendimento:** Transição da espera para o serviço confirmado.
+3. **Tabela de Preços Dinâmica:** Uso de **Dicionários** para gerir serviços e valores.
+4. **Relatório de Variedade:** Uso de **Sets** para identificar serviços únicos prestados.
+5. **Painel Administrativo:** Alteração de preços e configurações em tempo real.
+6. **Calculadora Integrada:** Cálculos de totais, descontos e acréscimos.
+
+### 🛠️ Tecnologias e Estruturas Utilizadas
+* **Listas (`[]`):** Gestão da fila cronológica.
+* **Dicionários (`{}`):** Mapeamento de serviços e preços.
+* **Sets (`{}`):** Filtro de serviços únicos para relatórios.
+* **Laços de Repetição (`while`):** Menu interativo e persistente.
+* **Condicionais (`if/elif/else`):** Lógica de tomada de decisão.
+
+---
+
+## 🏗️ Panorama Geral: O Sistema de Pedidos
+Independentemente do tema (Hamburgueria, Açaí ou Salão), o programa segue esta lógica fundamental:
+1. **Exibir um Menu:** Mostrar ao cliente o que está disponível.
+2. **Receber a Escolha:** O usuário digita o que deseja (`input`).
+3. **Processar o Pagamento:** Calcular o total e informar ao usuário.
+
+---
+
+## 👥 Participantes Organizados
+
+### 🌅 Manhã (Segunda e Terça)
+* | Nathan Dias |
+* | Felipe Mendes| Igor Freitas |
+* | Diogo Santos | Matheus Santos |
+* | Beatriz Araujo | Gustavo Silva | Yasmim Silva | Maria Mello | 
+* | Isabelly Castello | Sarah Santos | Ester Furukawa |
+* | Pedro Fausino |
+* | Geovana Leite | Gabrielly Santos
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+### 🌆 Tarde (Segunda e Terça)<!--Turma de Segunda - 5 Linhas e Terça - 5 Linhas-->
+* | Gabriel Carvalho | Gustavo | Nicolas | Felipe | Kauan | Victor |  <!-- Nosso grupo-->
+* | Leandro Xavier |Rebeca Del Negro| Ellis Oliveira | Daniel Souza | Manuela Andrade |<!--nosso grupo-->
+* | Giovana Medeiros | Gabriel Aquino | Lucas Prates | Rafael Aquino | Arthur Cordeiro | <!--nosso grupo-->
+* | Filipe Luis, | Maria Eduarda Verissimo,| Isabella Sampaio |<!--Feito com Profy-->
+* | Leonardo Sales |
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+* | Miguel Dias | Sophia Neris | Yasmin Silva | Pedro Henrique | Nicollas Tegas| Anna Clara | Tiago Araujo
+* | Carlos Pereira | 
+* | Luane |
+* | Pietro |
+* | Samuel |
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+
+---
+
+## 📂 Projetos por Tema
+
+* **💈 Barbearia:** Nathan Dias
+* **💈 Barbearia:** Felipe Mendes | Igor Freitas
+* **🍔 Hamburgueria:** Diogo Santos | Matheus Santos
+* **🥖 Padaria:** Beatriz Araujo | Gustavo Silva | Yasmim Silva | Maria Mello
+* **🍧 Açaiteria:** Isabelly Castello | Sarah Santos | Ester Furukawa
+* **💄 Salão de Beleza:** Geovana Leite | Gabrielly Santos
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+
+
+* **🍧 Açaí:** Anthony, C. Adriano, Luan S. | Cauã, Juan, Pedro H. | Guilherme, Gustavo, Leonardo, Wilson | Lorenzo, Luis, Maxuel.
+* **🥖 Padaria:** Kauã, Miguel M. | Fellipe, Gustavo R., Juliana, Lana.
+* **🍧 Açaí:** Isabelly, sarah, ester.
+* **🍽️ Restaurante:** Alicya, Ana, Larissa, Nicolly, Thalya, Thierry.
+* **✂️ Barbearia:** Allan, Igor, Milena, Yuri.
+* **💄 Salão de Beleza:** Michelle, Rafaela, Stefani.
+* **🍧 Açaí:** Anthony, C. Adriano, Luan S. | Cauã, Juan, Pedro H. | Guilherme, Gustavo, Leonardo, Wilson | Lorenzo, Luis, Maxuel. <!--barbearia-->
+* **🥖 Padaria:** Kauã, Miguel M. | Fellipe, Gustavo R., Juliana, Lana. <!--Hamburgueria-->
+* **🍽️ Restaurante:** Alicya, Ana, Larissa, Nicolly, Thalya, Thierry. <!--Padaria-->
+* **✂️ Barbearia:** Allan, Igor, Milena, Yuri. <!--Açaiteria-->
+* **💄 Salão de Beleza:** Michelle, Rafaela, Stefani.<!--Barbearia-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+* **💈 Barbearia:** Gabriel Carvalho, Nicolas, Kauan, Felipe, Gustavo, Victor
+* **🍔 Hamburgeria:** Leandro C., Rebeca N., Daniel S., Ellis O., Manuella A.
+* **🍔 Hambúrgueria:** Giovana Medeiros, Gabriel Aquino, Lucas Prates, Rafael Aquino, Arthur Cordeiro 
+* **💇‍♀️Salão de Beleza:** Filipe Luis, Maria Eduarda V., Isabella Sampaio 
+* **✂️ Barbearia:** Leonardo Sales
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+<!--vazio-->
+* **🍇 Açaiteria:** Miguel, Sophia, Yasmin, Pedro, Anna, Nicollas, Tiago 
+* **💈 Barbearia:** Gabriel Carvalho, Nicolas, Kauan, Felipe, Gustavo, Victor
+* **🍔 Hambúrgueria:** Leandro C.| Rebeca N.| Daniel S.| Ellis O.| Manuella A.
+* **🍔 Hambúrgueria:** Giovana Medeiros | Gabriel Aquino | Lucas Prates | Rafael Aquino | Arthur Cordeiro 
+* **💈 Barbearia:** Leonardo Sales
+
+
+---
+
+## 💻 Exemplos de Código (Python)
+
+Abaixo, os três níveis de complexidade utilizados no aprendizado:
+
+### 1️⃣ Exemplo Básico: Pedido Único
+```python
+# Objetivo: Registrar o pedido de um cliente e exibir o valor total.
+print("--- Bem-vindo à Nossa Hamburgueria! ---")
+
+hamburguer_simples = 15.00
+hamburguer_duplo = 25.00
+refrigerante = 7.00
+
+print("Cardápio:")
+print(f"1. Hambúrguer Simples - R$ {hamburguer_simples}")
+print(f"2. Hambúrguer Duplo - R$ {hamburguer_duplo}")
+print(f"3. Refrigerante - R$ {refrigerante}")
+
+escolha = input("\nDigite o número do item que deseja pedir: ")
+
+if escolha == "1":
+    print(f"Você escolheu o Simples. Total: R$ {hamburguer_simples}")
+elif escolha == "2":
+    print(f"Você escolheu o Duplo. Total: R$ {hamburguer_duplo}")
+elif escolha == "3":
+    print(f"Você escolheu o Refrigerante. Total: R$ {refrigerante}")
+else:
+    print("Opção inválida.")
+```
+
+### 2️⃣ Exemplo Intermediário: Atendimento Personalizado
+```python
+# Objetivo: Simular a recepção de um cliente com F-Strings.
+nome_cliente = input("Olá! Qual é o seu nome? ")
+
+print("\n" + "="*30)
+print(f"BEM-VINDO(A) À VOCA-BURGER, {nome_cliente.upper()}!")
+print("="*30)
+
+print("Confira nossas opções:")
+print("1 - Combo Clássico ..... R$ 25.00")
+print("2 - Combo Duplo ........ R$ 35.00")
+print("3 - Batata Suprema ..... R$ 15.00")
+print("4 - Sair")
+
+opcao = input("\nO que você deseja pedir? ")
+
+if opcao == "1":
+    print(f"\nÓtima escolha, {nome_cliente}! Preparando seu Combo.")
+elif opcao == "4":
+    print(f"\nAté logo, {nome_cliente}!")
+else:
+    print("\nOpção processada com sucesso.")
+```
+
+### 3️⃣ Exemplo Avançado: Carrinho de Compras (Loop While)
+```python
+# Objetivo: Permitir múltiplos pedidos e somar o total.
+nome_cliente = input("Qual o seu nome? ")
+total_conta = 0.0  
+continuar = True   
+
+print(f"\nOlá {nome_cliente}! Monte seu pedido (Digite 0 para finalizar):")
+
+while continuar:
+    print("\n--- MENU SEJA SUA VOCAÇÃO ---")
+    print("1. Item A (Hambúrguer/Açaí/Corte) - R$ 20.00")
+    print("2. Item B (Batata/Adicional/Barba) - R$ 10.00")
+    print("3. Item C (Bebida/Suco/Sobrancelha) - R$ 7.00")
+    print("0. FINALIZAR PEDIDO")
+    
+    escolha = input("\nEscolha o número do item: ")
+
+    if escolha == "1":
+        total_conta += 20.00
+        print("Item adicionado!")
+    elif escolha == "2":
+        total_conta += 10.00
+        print("Item adicionado!")
+    elif escolha == "3":
+        total_conta += 7.00
+        print("Item adicionado!")
+    elif escolha == "0":
+        continuar = False 
+    else:
+        print("Opção inválida!")
+
+print("\n" + "="*30)
+print(f"RESUMO DO PEDIDO - CLIENTE: {nome_cliente}")
+print(f"TOTAL A PAGAR: R$ {total_conta:.2f}")
+print("Obrigado e volte sempre!")
+print("="*30)
+```
+
+---
+
+## 📚 Método Educativo: Estrutura de Dados
+* **Dicionários e Listas:** Como organizar nomes e preços de forma profissional.
+* **Variáveis Acumuladoras:** Uso do operador `+=` para somar valores progressivamente.
+* **Boas Práticas de UX:** Feedback visual e formatação de moeda (`:.2f`).
